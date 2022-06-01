@@ -1,62 +1,85 @@
 * {
-  font-family: Arial , sans-serif;
+  font-family: 'Bebas Neue', cursive;
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: 3px;
+  letter-spacing: 4px;
+}
+
+body {
+  margin: 40px;
+  background-image: url('backToDoList.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
 
 #title {
-  color: rgba(32 , 161 , 0 , 0.5);
-  font-family: Arial , sans-serif;
+  color: rgba(45, 45, 45);
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 #funcionamento {
-  color: rgb(218 , 233 , 247);
-  font-family: Arial , sans-serif;
+  color: #fff;
   font-style: italic;
 }
 
 #texto-tarefa {
   border-radius: 25px;
   border: none;
-  height: 20px;
+  height: 42px;
   margin: 30px 0;
-  padding: 10px;
+  text-align: center;
   width: 565px;
+  outline: none;
+  border-radius: 4px;
 }
 
 ol {
   margin-bottom: 20px;
-  color: white;
+  color: rgb(45, 45, 45);
   font-weight: 700;
   line-height: 30px;
 }
 
-body {
-  background-color: black;
-  margin: 40px;
-}
-
 header {
-  background-color: rgba(209 , 200 , 200 , 0.274);
+  background-color: rgb(209 , 200 , 200);
   border-radius: 25px 25px 0 0;
   margin-bottom: 0;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  border-bottom: 1px solid rgb(129, 98, 98);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 section {
-  background-color: rgba(235 , 224 , 133 , 0.4);
+  background-color: rgb(235 , 224 , 133);
   border-radius: 0 0 25px 25px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
-header , section {
-  margin: 0 20px;
-  padding: 30px;
-  width: 750px;
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #criar-tarefa {
@@ -81,13 +104,14 @@ header , section {
 
 #mover-cima , #mover-baixo {
   background-color: rgba(255 , 166 , 0 , 0.8);
-  border-radius: 50px;
+  border-radius: 4px;
   border: none;
   color: rgba(255 , 255 , 255);
   font-size: 1.2em;
   font-weight: 700;
   height: 40px;
   width: 60px;
+  text-align: center;
 }
 
 #criar-tarefa , #apaga-tudo , #salvar-tarefas {
@@ -97,6 +121,7 @@ header , section {
   font-weight: 700;
   height: 40px;
   width: 150px;
+  border-radius: 4px;
 }
 
 #remover-finalizados , #remover-selecionado {
@@ -106,6 +131,7 @@ header , section {
   font-weight: 700;
   height: 40px;
   width: 150px;
+  border-radius: 4px;
 }
 
 #criar-tarefa:hover {
@@ -154,6 +180,18 @@ header , section {
   box-shadow: rgba(255 , 166 , 0 , 0.8);
   color: rgba(255 , 166 , 0 , 0.8);
   transition: 0.8s;
+}
+
+.container-tarefa {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .select {
